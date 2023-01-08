@@ -170,6 +170,54 @@
 
    
     <script src="js/main.js"></script>
+     <script>
+
+      document.addEventListener('DOMContentLoaded', () => {
+            const { isAdblocking } = window['adblock-hunter']
+
+            isAdblocking().then(res => {
+                if (res) {
+                    Swal.fire({
+                    title: 'AdBlock Detected',
+                    text: 'Please disable AdBlock to use this site.',
+                    icon: 'error',
+                    confirmButtonText: 'Okay'
+                    }).then(() => {
+                        location.reload();
+                    });
+                };
+            });
+        });
+
+      for (var i = 0; i < 1; i++) {
+        var card = document.createElement('div');
+        card.innerHTML = `<div class="col-6 col-lg-3 ps-1 pe-1 pb-1 pt-1">Loading...</div>`;
+        document.getElementById('row').appendChild(card);
+      }
+
+
+      $(document).ready(function() {
+        fetch("/api/v1/scripts").then((response) => response.json()).then((data) => {
+          let data1 = "";
+          
+          for (var key in data) {
+                data1+= `<div class="col-6 col-lg-3 ps-1 pe-1 pb-1 pt-1">
+                <div class="card card-hover" style="background-color: rgb(31,31,31);">
+                <a href="/script/${data[key].id}" class="nav-link">
+                <img src="${data[key].image}" class="card-img-top" alt="${data[key].frontname}">
+                <div class="card-body">
+                <h5 class="card-title text-truncate">${data[key].frontname}</h5>
+                <p class="card-subtitle text-secondary">XXX Views</p>
+                </div>
+                </a>
+                </div>
+                </div>
+                `;
+              document.getElementById("row").innerHTML = data1;
+            }
+        });
+      });
+    </script>
 </body>
 
 </html>
