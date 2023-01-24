@@ -1,8 +1,8 @@
 async function detectAdBlock() {
-    enabledEl1.style.display = 'none';
+    
 var enabledEl1 = document.getElementById('popout');
   let adBlockEnabled = false
- 
+ enabledEl1.style.display = 'none';
   const googleAdUrl = 'https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js'
 const AdMavenAdUrl = '//d1b9b1cxai2c03.cloudfront.net/?xcbbd=975785'
   try {
