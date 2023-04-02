@@ -1,0 +1,153 @@
+.container-fluid {
+  padding: 0 !important;
+}
+
+.pt-280 {
+  padding-top: 280px;
+}
+
+.pb-140 {
+  padding-bottom: 140px;
+}
+
+.py-140 {
+  padding-top: 140px;
+  padding-bottom: 140px;
+}
+
+.pt-70 {
+  padding-top: 70px;
+}
+
+.pt-36 {
+  padding-top: 36px;
+}
+
+.pb-40 {
+  padding-bottom: 40px;
+}
+
+.my-30 {
+  margin-top: 30px;
+  margin-bottom: 30px;
+}
+
+.dropdown-menu.show {
+  background-color: #090909;
+  text-align: center;
+  border-radius: 8px;
+  padding: 10px;
+}
+
+.dropdown-item {
+  color: #fff;
+  padding: 10px;
+  border-radius: 6px;
+  margin-top: 5px;
+}
+
+.dropdown-item.active,
+.dropdown-item:active {
+  color: #fff;
+  text-decoration: none;
+  background-image: linear-gradient(52.7deg, #ff00ff, #00bfff);
+}
+
+.dropdown-item:hover {
+  text-decoration: none;
+  color: #fff;
+  background-color: #9370db;
+}
+
+.navbar-toggler {
+  width: 20px;
+  height: 20px;
+  position: relative;
+  transition: .5s ease-in-out;
+}
+
+.navbar-toggler,
+.navbar-toggler:focus,
+.navbar-toggler:active,
+.toggler-icon:focus {
+  outline: none;
+  box-shadow: none;
+  border: 0;
+}
+
+.navbar-toggler span {
+  margin: 0;
+  padding: 0;
+}
+
+.toggler-icon {
+  display: block;
+  position: absolute;
+  height: 3px;
+  width: 100%;
+  background: linear-gradient(52.7deg, #ff00ff, #9370db);
+  border-radius: 2px;
+  opacity: 1;
+  left: 0;
+  transform: rotate(0deg);
+  transition: .25s ease-in-out;
+}
+
+.middle-bar {
+  margin-top: 0;
+}
+
+.navbar-toggler .top-bar {
+  margin-top: 0;
+  transform: rotate(135deg);
+}
+
+.navbar-toggler .middle-bar {
+  opacity: 0;
+  filter: alpha(opacity=0);
+}
+
+.navbar-toggler .bottom-bar {
+  margin-top: 0;
+  transform: rotate(-135deg);
+}
+
+.navbar-toggler.collapsed .top-bar {
+  margin-top: -10px;
+  transform: rotate(0deg);
+}
+
+.navbar-toggler.collapsed .middle-bar {
+  opacity: 1;
+  filter: alpha(opacity=100);
+}
+
+.navbar-toggler.collapsed .bottom-bar {
+  margin-top: 10px;
+  transform: rotate(0deg);
+}
+
+.navbar-toggler.collapsed .toggler-icon .top-bar {
+  background: linear-gradient(-52.7deg, #ff00ff, #9370db);
+}
+
+.card {
+  background-color: #090909 !important;
+  border: 0px none !important;
+  border-radius: 10px !important;
+}
+
+.card-img, .card-img-top {
+  border-top-left-radius: 10px !important;
+  border-top-right-radius: 10px !important;
+}
+
+.card-footer {
+  padding: 0.5rem 1rem;
+  background-color: #090909;
+  border-style: solid;
+  border-width: 3px 0px 0px 0px;
+  border-image: linear-gradient(to right, #ff00ff, #00bfff);
+  border-image-slice: 1;
+  border-radius: 0 0 10px 10px !important;
+}
